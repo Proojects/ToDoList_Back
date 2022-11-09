@@ -17,4 +17,4 @@ jobs:
 
     - name: Run linter
       run: |
-        pylint TodoList/
+        pylint to_do_list/

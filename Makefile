@@ -1,2 +1,2 @@
 lint:
-	pylint TodoList/
+	pylint to_do_list/
