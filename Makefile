@@ -1,2 +1,5 @@
+install:
+	pip install -r requirements.txt
+
 lint:
-	pylint to_do_list/
+	flake8 to_do_list/
