@@ -7,8 +7,14 @@ def create_app(config_class: str):
     return flask_app
 
 
+def register_plugins(flask_app):
+    from .plugins import db
+    db.init_app(flask_app)
+
+
 def configure_app(config_class):
     flask_app = create_app(config_class)
+    register_plugins(flask_app)
     return flask_app
 
 
