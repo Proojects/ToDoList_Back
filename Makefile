@@ -6,3 +6,6 @@ lint:
 
 run:
 	python manage.py run
+
+init:
+	python manage.py db migrate
